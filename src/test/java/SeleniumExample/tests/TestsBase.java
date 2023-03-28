@@ -22,7 +22,7 @@ public class TestsBase {
         options.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(url);
         return driver;
     }
